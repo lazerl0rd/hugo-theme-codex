@@ -216,7 +216,7 @@ There are not many UI-related strings to override in this theme. If you are look
 
 ### Pagination
 
-Every post created in `./blog` will enable pagination (previous and next post). You can manually remove them by removing `pagination = true` in specific post. If you wish to disable them completly, remove `pagination = true` from archetypes/blog.md
+Every post created in `./blog` will enable pagination (previous and next post). You can manually remove them by removing `pagination: true` in specific post. If you wish to disable them completly, remove `pagination: true` from archetypes/blog.md
 
 ### Favicon
 
