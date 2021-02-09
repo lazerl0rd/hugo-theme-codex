@@ -14,7 +14,7 @@ Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-manageme
 
 ## Instagram Simple Shortcode
 
-{{< instagram_simple BGvuInzyFAe hidecaption >}}
+This feature has been removed due to being broken.
 
 
 ## YouTube Privacy Enhanced Shortcode
