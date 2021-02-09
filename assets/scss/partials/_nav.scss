@@ -67,22 +67,15 @@
 }
 
 .nav__list a {
-  color: $grey;
+  color: $darkGrey;
+  @media (prefers-color-scheme: dark) {
+    color: $lightGrey;
+  }
   text-decoration: none;
   font-size: 2em;
 
   &.active {
-    color: $black;
-    @media (prefers-color-scheme: dark) {
-      color: $white;
-    }
-  }
-
-  &:hover {
-    color: $black;
-    @media (prefers-color-scheme: dark) {
-      color: $white;
-    }
+    color: $primary;
   }
 
   @media screen and (min-width: $medium) {
