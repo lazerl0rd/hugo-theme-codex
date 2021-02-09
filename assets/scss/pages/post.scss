@@ -266,3 +266,21 @@ table {
     border: 1px double $greyTableBorder;
   }
 }
+
+main {
+  a {
+    text-decoration: none;
+
+    &:link {
+      color: #2196f3;
+    }
+
+    &:visited {
+      color: #673ab7;
+    }
+  }
+
+  a:active {
+    color: #f44336;
+  }
+}

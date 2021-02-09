@@ -36,7 +36,10 @@
 
 .tag__link {
   text-decoration: none;
-  color: $grey;
+  color: $darkGrey;
+  @media (prefers-color-scheme: dark) {
+    color: $lightGrey;
+  }
   font-size: 0.9rem;
 
   &::before {
@@ -46,10 +49,7 @@
   }
 
   &:hover {
-    color: $darkGrey;
-    @media (prefers-color-scheme: dark) {
-      color: $lightGrey;
-    }
+    color: $primary;
   }
 }
 
