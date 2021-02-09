@@ -208,6 +208,7 @@ Support for [`i18n`](https://gohugo.io/functions/i18n/#readout) is currently ava
 
 - English
 - German
+- Arabic
 
 If you would like to have another language supported, create a post in the [Discussions](https://github.com/jakewies/hugo-theme-codex/discussions) section of the repository. You may also support your language of choice by creating a `i18n/` directory in your project with a `.toml` file named after the language you are supporting. 
 
