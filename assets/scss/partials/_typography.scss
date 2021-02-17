@@ -5,7 +5,10 @@ $scale: 1.414;
 $leading: $baseLineHeight * 1rem;
 
 html {
-  font-family: "Google Sans", sans-serif;
+  font-family: "JoyPixels", "Google Sans", sans-serif;
+  @-moz-document url-prefix() {
+    font-family: "JoyPixels (SVG-in-OT)", "Google Sans", sans-serif;
+  }
   -webkit-font-smoothing: antialiased;
   font-size: 95%;
 
