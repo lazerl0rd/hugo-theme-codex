@@ -24,9 +24,11 @@
   <link rel="preload" href="/fonts/GoogleSans-Medium.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/GoogleSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
 
+  <!-- Open Graph -->
+  {{ partial "social_metadata.html" . }}
+
   <!-- Twitter -->
   {{ if isset .Site.Params "twitter" }}
-  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="{{ .Title }}" />
   <meta name="twitter:description" content="{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"/>
   <meta name="twitter:site" content="{{ .Site.Params.twitterSite | default .Site.Params.twitter }}" />
