@@ -20,6 +20,9 @@
   <link rel="dns-prefetch" href="https://disqus.com" crossorigin>
   <link rel="dns-prefetch" href="https://referrer.disqus.com" crossorigin>
 
+  <!-- Prefetch the DNS lookup for PrismJS. -->
+  <link rel="dns-prefetch" href="https://unpkg.com" crossorigin>
+
   <!-- Preload (or prefetch in case of the home page) the emoji font first as it's massive. -->
   {{ if .IsHome }}
   <link rel="prefetch" href="/fonts/JoyPixels-SBIX.woff2" as="font" type="font/woff2" crossorigin>
