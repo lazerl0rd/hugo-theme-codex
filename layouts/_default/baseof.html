@@ -15,6 +15,11 @@
   <!-- Preconnect to Zest Cloud to enable a seamless transition. -->
   <link rel="preconnect" href="https://thebox.thezest.dev:61447" crossorigin>
 
+  <!-- Prerender the blog list page if on the home page. -->
+  {{ if .IsHome }}
+  <link rel="prerender" href="/blog" crossorigin>
+  {{ end }}
+
   <!-- Prefetch the DNS lookups for Disqus resources. -->
   <link rel="dns-prefetch" href="https://c.disquscdn.com" crossorigin>
   <link rel="dns-prefetch" href="https://disqus.com" crossorigin>
