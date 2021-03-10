@@ -43,6 +43,11 @@
   {{- if not .Site.IsServer -}}
       {{ template "_internal/google_analytics.html" . }}
   {{- end -}}
+
+  {{ $blogDir := .Site.Params.blogDir | default "/blog" }}
+  {{ if .IsHome }}
+  <link rel="prerender" href="{{ $blogDir }}" crossorigin="anonymous">
+  {{ end }}
 </head>
 
 <body>
