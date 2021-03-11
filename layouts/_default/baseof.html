@@ -34,7 +34,7 @@
   {{ $current_page := . }}
   
   {{ range (slice $base_styles_opts $custom_styles_opts) }}
-    {{ $style := resources.Get .src | resources.ExecuteAsTemplate .dest $current_page | toCSS | minify | fingerprint }}
+    {{ $style := resources.Get .src | resources.ExecuteAsTemplate .dest $current_page | toCSS | minify | fingerprint "sha384" }}
     <link type="text/css" rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"/>
   {{ end }}
   
@@ -60,7 +60,7 @@
 
   {{ block "footer" . }} {{ end }}
 
-  {{ $script := resources.Get "js/index.js" | minify | fingerprint }}
+  {{ $script := resources.Get "js/index.js" | minify | fingerprint "sha384" }}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity | safeHTMLAttr }}" crossorigin="anonymous"></script>
   {{ block "scripts" . }} {{ end }}
 </body>
