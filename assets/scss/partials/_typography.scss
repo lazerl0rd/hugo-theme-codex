@@ -169,3 +169,40 @@ pre code {
 abbr[title] {
   text-decoration: underline double;
 }
+
+@mixin glitch-text { 
+  content: attr(glitch-text);
+  inset: 0 auto auto 0;
+  position: absolute;
+  width: 100%;
+}
+
+@keyframes glitch-anim {
+  $steps: 20;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      clip: rect(random(100)+px, 9999px, random(125)+px, 0);
+      transform: skew((random(100) / 100) + deg);
+    }
+  }
+}
+
+.glitch {
+  position: relative;
+  &::before {
+    @include glitch-text;
+
+    animation: glitch-anim 5s infinite ease-in alternate-reverse;
+    clip-path: polygon(44px, 450px, 56px, 0);
+    left: 2px;
+    text-shadow: -2px 0 darken($primary, 50%);
+  }
+  
+  &::after {
+    @include glitch-text;
+
+    animation: glitch-anim 2s infinite ease-out alternate-reverse;
+    left: -2px;
+    text-shadow: -2px 0 invert($primary), 2px 2px $primary;
+  }
+}
