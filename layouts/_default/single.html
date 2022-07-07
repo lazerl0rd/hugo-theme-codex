@@ -19,7 +19,9 @@
               {{ end }}
           </article>
 	  {{ partial "tags.html" .}} {{ if .Params.pagination }} {{ partial "post-pagination.html" .}} {{ end }}
-          {{ template "_internal/disqus.html" . }}
+          {{ if ne .Title "About Me" }}
+              {{ template "_internal/disqus.html" . }}
+          {{ end }}
           <footer class="post__footer">
             {{ partial "social-icons.html" .}}
             <p>{{ replace .Site.Copyright "{year}" now.Year }}</p>
