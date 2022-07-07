@@ -15,13 +15,9 @@
   <link rel="preconnect" href="https://raw.githubusercontent.com">
   <link rel="preconnect" href="https://rsms.me">
 
-  <!-- Twitter -->
-  {{ if isset .Site.Params "twitter" }}
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="{{ .Title }}" />
-  <meta name="twitter:description" content="{{ if .IsHome }}{{ htmlEscape .Site.Params.description }}{{ else }}{{ htmlEscape .Description }}{{ end }}"/>
-  <meta name="twitter:site" content="{{ .Site.Params.twitterSite | default .Site.Params.twitter }}" />
-  <meta name="twitter:creator" content="{{ .Site.Params.twitterCreator | default .Site.Params.twitter }}" />
+  {{ $partialPath := printf "social_metadata.html" }}
+  {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+      {{ partial $partialPath }}
   {{ end }}
 
   {{ partial "favicon.html" }}
