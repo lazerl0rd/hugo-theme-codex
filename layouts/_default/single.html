@@ -19,7 +19,7 @@
               {{ end }}
           </article>
 	  {{ partial "tags.html" .}} {{ if .Params.pagination }} {{ partial "post-pagination.html" .}} {{ end }}
-          {{ if ne .Title "About Me" }}
+          {{ if ne .File.TranslationBaseName "about" }}
               {{ template "_internal/disqus.html" . }}
           {{ end }}
           <footer class="post__footer">
