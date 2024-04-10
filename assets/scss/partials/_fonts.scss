@@ -1,0 +1,67 @@
+@supports (font-variation-settings: normal) {
+  @font-face { font-family:Inter; font-style:normal; font-weight:100 900; font-display:swap; src:local("Inter Variable"), url("https://rsms.me/inter/font-files/InterVariable.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:100 900; font-display:swap; src:local("Inter Variable Italic"), url("https://rsms.me/inter/font-files/InterVariable-Italic.woff2") format("woff2"); }
+
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:100 900; font-variation-settings: "opsz" 32; font-display:swap; src:local("Inter Variable"), url("https://rsms.me/inter/font-files/InterVariable.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:100 900; font-variation-settings: "opsz" 32; font-display:swap; src:local("Inter Variable Italic"), url("https://rsms.me/inter/font-files/InterVariable-Italic.woff2") format("woff2"); }
+
+  @font-face { font-family:JBMono; font-style:normal; font-weight:100 800; font-display:swap; src:url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/variable/JetBrainsMono[wght].woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:100 800; font-display:swap; src:url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/variable/JetBrainsMono-Italic[wght].woff2") format("woff2"); }
+}
+
+@supports not (font-variation-settings: normal) {
+  @font-face { font-family:Inter; font-style:normal; font-weight:100; font-display:swap; src:local("Inter Thin"), url("https://rsms.me/inter/font-files/Inter-Thin.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:100; font-display:swap; src:local("Inter Thin Italic"), url("https://rsms.me/inter/font-files/Inter-ThinItalic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:200; font-display:swap; src:local("Inter ExtraLight"), url("https://rsms.me/inter/font-files/Inter-ExtraLight.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:200; font-display:swap; src:local("Inter ExtraLight Italic"), url("https://rsms.me/inter/font-files/Inter-ExtraLightItalic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:300; font-display:swap; src:local("Inter Light"), url("https://rsms.me/inter/font-files/Inter-Light.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:300; font-display:swap; src:local("Inter Light Italic"), url("https://rsms.me/inter/font-files/Inter-LightItalic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:400; font-display:swap; src:local("Inter"), url("https://rsms.me/inter/font-files/Inter-Regular.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:400; font-display:swap; src:local("Inter Italic"), url("https://rsms.me/inter/font-files/Inter-Italic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:500; font-display:swap; src:local("Inter Medium"), url("https://rsms.me/inter/font-files/Inter-Medium.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:500; font-display:swap; src:local("Inter Medium Italic"), url("https://rsms.me/inter/font-files/Inter-MediumItalic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:600; font-display:swap; src:local("Inter SemiBold"), url("https://rsms.me/inter/font-files/Inter-SemiBold.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:600; font-display:swap; src:local("Inter SemiBold Italic"), url("https://rsms.me/inter/font-files/Inter-SemiBoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:700; font-display:swap; src:local("Inter Bold"), url("https://rsms.me/inter/font-files/Inter-Bold.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:700; font-display:swap; src:local("Inter Bold Italic"), url("https://rsms.me/inter/font-files/Inter-BoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:800; font-display:swap; src:local("Inter ExtraBold"), url("https://rsms.me/inter/font-files/Inter-ExtraBold.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:800; font-display:swap; src:local("Inter ExtraBold Italic"), url("https://rsms.me/inter/font-files/Inter-ExtraBoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:normal; font-weight:900; font-display:swap; src:local("Inter Black"), url("https://rsms.me/inter/font-files/Inter-Black.woff2") format("woff2"); }
+  @font-face { font-family:Inter; font-style:italic; font-weight:900; font-display:swap; src:local("Inter Black Italic"), url("https://rsms.me/inter/font-files/Inter-BlackItalic.woff2") format("woff2"); }
+
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:100; font-display:swap; src:local("Inter Display Thin"), url("https://rsms.me/inter/font-files/InterDisplay-Thin.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:100; font-display:swap; src:local("Inter Display Thin Italic"), url("https://rsms.me/inter/font-files/InterDisplay-ThinItalic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:200; font-display:swap; src:local("Inter Display ExtraLight"), url("https://rsms.me/inter/font-files/InterDisplay-ExtraLight.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:200; font-display:swap; src:local("Inter Display ExtraLight Italic"), url("https://rsms.me/inter/font-files/InterDisplay-ExtraLightItalic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:300; font-display:swap; src:local("Inter Display Light"), url("https://rsms.me/inter/font-files/InterDisplay-Light.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:300; font-display:swap; src:local("Inter Display Light Italic"), url("https://rsms.me/inter/font-files/InterDisplay-LightItalic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:400; font-display:swap; src:local("Inter Display"), url("https://rsms.me/inter/font-files/InterDisplay-Regular.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:400; font-display:swap; src:local("Inter Display Italic"), url("https://rsms.me/inter/font-files/InterDisplay-Italic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:500; font-display:swap; src:local("Inter Display Medium"), url("https://rsms.me/inter/font-files/InterDisplay-Medium.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:500; font-display:swap; src:local("Inter Display Medium Italic"), url("https://rsms.me/inter/font-files/InterDisplay-MediumItalic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:600; font-display:swap; src:local("Inter Display SemiBold"), url("https://rsms.me/inter/font-files/InterDisplay-SemiBold.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:600; font-display:swap; src:local("Inter Display SemiBold Italic"), url("https://rsms.me/inter/font-files/InterDisplay-SemiBoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:700; font-display:swap; src:local("Inter Display Bold"), url("https://rsms.me/inter/font-files/InterDisplay-Bold.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:700; font-display:swap; src:local("Inter Display Bold Italic"), url("https://rsms.me/inter/font-files/InterDisplay-BoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:800; font-display:swap; src:local("Inter Display ExtraBold"), url("https://rsms.me/inter/font-files/InterDisplay-ExtraBold.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:800; font-display:swap; src:local("Inter Display ExtraBold Italic"), url("https://rsms.me/inter/font-files/InterDisplay-ExtraBoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:normal; font-weight:900; font-display:swap; src:local("Inter Display Black"), url("https://rsms.me/inter/font-files/InterDisplay-Black.woff2") format("woff2"); }
+  @font-face { font-family:InterDisplay; font-style:italic; font-weight:900; font-display:swap; src:local("Inter Display Black Italic"), url("https://rsms.me/inter/font-files/InterDisplay-BlackItalic.woff2") format("woff2"); }  
+
+  @font-face { font-family:JBMono; font-style:normal; font-weight:100; font-display:swap; src:local("JetBrains Mono Thin"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Thin.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:100; font-display:swap; src:local("JetBrains Mono Thin Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-ThinItalic.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:normal; font-weight:200; font-display:swap; src:local("JetBrains Mono ExtraLight"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-ExtraLight.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:200; font-display:swap; src:local("JetBrains Mono ExtraLight Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-ExtraLightItalic.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:normal; font-weight:300; font-display:swap; src:local("JetBrains Mono Light"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Light.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:300; font-display:swap; src:local("JetBrains Mono Light Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-LightItalic.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:normal; font-weight:400; font-display:swap; src:local("JetBrains Mono"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:400; font-display:swap; src:local("JetBrains Mono Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Italic.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:normal; font-weight:500; font-display:swap; src:local("JetBrains Mono Medium"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Medium.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:500; font-display:swap; src:local("JetBrains Mono Medium Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-MediumItalic.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:normal; font-weight:600; font-display:swap; src:local("JetBrains Mono SemiBold"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-SemiBold.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:600; font-display:swap; src:local("JetBrains Mono SemiBold Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-SemiBoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:normal; font-weight:700; font-display:swap; src:local("JetBrains Mono Bold"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-Bold.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:700; font-display:swap; src:local("JetBrains Mono Bold Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-BoldItalic.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:normal; font-weight:800; font-display:swap; src:local("JetBrains Mono ExtraBold"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-ExtraBold.woff2") format("woff2"); }
+  @font-face { font-family:JBMono; font-style:italic; font-weight:800; font-display:swap; src:local("JetBrains Mono ExtraBold Italic"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/fonts/webfonts/JetBrainsMono-ExtraBoldItalic.woff2") format("woff2"); }
+}
